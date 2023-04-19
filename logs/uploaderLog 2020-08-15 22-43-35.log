@@ -1,0 +1,11 @@
+2020-08-15 22:43:35,085-CRITICAL - 49  PREFERENCES NOT FOUND on Profile 11
+Traceback (most recent call last):
+  File "ytidman.py", line 41, in getProfileNames
+    with open(os.getenv('LOCALAPPDATA') + "\\Google\\Chrome\\User Data\\" + name + "\\Preferences", "r") as pref:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Arjun\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 11\\Preferences'
+2020-08-15 22:43:35,086-INFO - 53  GETTING CHROME PROFILES SUCCESSFUL
+2020-08-15 22:43:36,837-CRITICAL - 89  GO TO VIDEO MANAGER ERROR
+Traceback (most recent call last):
+  File "ytidman.py", line 86, in goToVideoManager
+    driver.execute_script(javaScript)
+AttributeError: 'NoneType' object has no attribute 'execute_script'

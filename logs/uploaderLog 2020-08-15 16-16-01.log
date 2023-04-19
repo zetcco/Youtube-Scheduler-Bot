@@ -1,0 +1,56 @@
+2020-08-15 16:16:01,823-INFO - 50  GETTING CHROME PROFILES SUCCESSFUL
+2020-08-15 16:17:09,963-INFO - 74  SETTING CHROME OPTIONS SUCCESSFUL ------------ SELECTED PROFILE: Profile 11 , pranesan0013@gmail.com
+2020-08-15 16:17:17,566-INFO - 63  STARTING CHROME SUCCESSFUL
+2020-08-15 16:17:17,834-INFO - 84  GO TO VIDEO MANAGER SUCCESSFUL
+2020-08-15 16:17:31,184-INFO - 333  GETTING VIDEO LINKS SUCCESSFUL
+2020-08-15 16:17:34,166-INFO - 395  ------------ Started working on 'https://studio.youtube.com/video/DM0CrziAc78/edit'  ------------
+2020-08-15 16:17:34,190-INFO - 397  Product ID: B01IOM03G6
+2020-08-15 16:17:34,319-INFO - 240  Visibility container clicked
+2020-08-15 16:17:35,532-INFO - 249  New date set.
+2020-08-15 16:17:37,954-INFO - 258  New time set.
+2020-08-15 16:17:40,100-INFO - 273  CLICKING ON SAVE BUTTON SUCCESSFUL
+2020-08-15 16:17:41,698-INFO - 294  VIDEO SAVING SUCCESSFUL
+2020-08-15 16:17:44,240-INFO - 395  ------------ Started working on 'https://studio.youtube.com/video/p28kg1bwvxA/edit'  ------------
+2020-08-15 16:17:44,271-INFO - 397  Product ID: B01IBRFMQU
+2020-08-15 16:17:44,406-INFO - 240  Visibility container clicked
+2020-08-15 16:17:45,655-INFO - 249  New date set.
+2020-08-15 16:17:48,583-INFO - 258  New time set.
+2020-08-15 16:17:50,616-INFO - 273  CLICKING ON SAVE BUTTON SUCCESSFUL
+2020-08-15 16:17:51,686-CRITICAL - 276  CLICKING ON SAVE BUTTON ERROR
+Traceback (most recent call last):
+  File "ytidman.py", line 274, in saveChanges
+    savedChangesAppear()
+  File "ytidman.py", line 292, in savedChangesAppear
+    savedChangesStatus = driver.find_element_by_css_selector('.style-scope.paper-toast').text
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 598, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\urllib3\request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\urllib3\request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\urllib3\poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Arjun\anaconda3\lib\http\client.py", line 1344, in getresponse
+    response.begin()
+  File "C:\Users\Arjun\anaconda3\lib\http\client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Arjun\anaconda3\lib\http\client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Arjun\anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt

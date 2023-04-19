@@ -1,0 +1,23 @@
+2020-09-03 00:44:31,001-INFO - 53  GETTING CHROME PROFILES SUCCESSFUL
+2020-09-03 00:44:33,320-INFO - 77  SETTING CHROME OPTIONS SUCCESSFUL ------------ SELECTED PROFILE: Profile 11 , pranesan0013@gmail.com
+2020-09-03 00:44:36,647-CRITICAL - 68  STARTING CHROME ERROR
+Traceback (most recent call last):
+  File "ytidman.py", line 63, in startChrome
+    driver = webdriver.Chrome(chrome_path, options=options)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Arjun\anaconda3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+
+2020-09-03 00:44:36,650-CRITICAL - 89  GO TO VIDEO MANAGER ERROR
+Traceback (most recent call last):
+  File "ytidman.py", line 86, in goToVideoManager
+    driver.execute_script(javaScript)
+AttributeError: 'NoneType' object has no attribute 'execute_script'
